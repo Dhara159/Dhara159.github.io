@@ -1,0 +1,206 @@
+#boxwrap {
+  width: 614px;
+  height: 300px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.8s 0.2s ease;
+}
+
+.box {
+  height: 202px;
+  width: 200px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  color: #38c5b9;
+  margin: 1px;
+  font-size: 20px;
+  transition: 0.8s 0.2s ease;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  display: table;
+  margin: auto;
+}
+
+.title2 {
+  display: table-cell;
+  vertical-align: middle;
+  transition: 0.8s ease;
+}
+
+.title h2,
+p {
+  text-align: center;
+}
+
+.box2 {
+  background: #262626;
+  width: 202px;
+  height: 202px;
+  float: left;
+  border: solid 1px #38c5b9;
+  transition: width 0.8s 0.2s ease, height 0.8s 0.2s ease, transform 0.8s ease;
+}
+
+.box2 img {
+  transition: 0.1s 0.2s ease;
+  opacity: 0;
+}
+
+.box:hover .box2 {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.box:hover .title {
+  opacity: 0;
+  transition: opacity 0.1s 0.2s ease;
+}
+
+.title {
+  transform: rotateY(10deg);
+  transition: 0.2s 0.2s
+}
+
+.box:hover .box2 img {
+  opacity: 1;
+}
+
+.imgborder {
+  width: 85%;
+  height: 85%;
+  border: solid #38c5b9;
+  position: absolute;
+  display: table;
+  transform: rotateY(180deg);
+  top: 7%;
+  left: 7%;
+  transition: 0.1s 0.2s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.box:hover .imgborder {
+  opacity: 1;
+}
+
+.title3 {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #38c5b9;
+}
+
+.title3 span {
+  border-bottom: solid 1px #38c5b9;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* JUST A LITTLE RESPONSIVE ;) */
+
+@media only screen and (max-height: 600px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+  .box2 {
+    width: 100px;
+    height: 100px;
+    font-size: 0.5em;
+  }
+  #boxwrap {
+    width: 310px;
+    height: 310px;
+  }
+  .imgborder {
+    width: 80%;
+    top: 10%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 100px;
+    height: 100px;
+  }
+  .box2 {
+    width: 100px;
+    height: 100px;
+    font-size: 0.5em;
+  }
+  #boxwrap {
+    width: 310px;
+    height: 310px;
+  }
+  .imgborder {
+    width: 80%;
+    top: 10%;
+    height: 80%;
+  }
+}
+/* THIS IS FOR ME :P */
+
+#me {
+  font-size: 15px;
+  border: solid 1px #262626;
+  width: 55px;
+  padding: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  right: 1.3vw;
+  bottom: 1.3vw;
+  color: #262626;
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+#backme {
+  background: #262626;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.2s ease-in-out;
+}
+
+#me:hover {
+  cursor: pointer;
+  color: #38c5b9;
+}
+
+#me:active {
+  box-shadow: 1px 1px 1px #424242;
+}
+
+#me:hover #backme {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-height: 400px) {
+  #me {
+    background: #38c5b9;
+    bottom: 0;
+    right: 0;
+    position: fixed!important;
+    border: solid 1px #38c5b9;
+  }
+}
