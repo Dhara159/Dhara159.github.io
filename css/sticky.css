@@ -63,6 +63,7 @@ ul,li{
 }
 
 @media (max-width: 384px)
+{
   .sticky_ul {
     overflow: hidden;
     padding: 3em;
