@@ -2405,7 +2405,7 @@ a.callbacks_nav.callbacks1_nav.prev {
 		padding: 1em 1.5em;
 	}
 }
-@media(max-width:414px){
+@media(max-width:413px){
 	.banner {
 		min-height: 29em;
 	}
