@@ -1832,6 +1832,12 @@ a.callbacks_nav.callbacks1_nav.prev {
 		letter-spacing: 1px;
 		line-height: 26px;
 	}
+	.banner-image-w3layouts img {
+		position: absolute;
+    		bottom: -120px;
+    		right: -3%;
+    		width: 550px
+	}
 	.about-left-w3ls {
 		min-height: 699px;
 	}
