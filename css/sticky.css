@@ -59,7 +59,15 @@ ul,li{
     padding: 3em;
     padding-left: 0px;
     margin-left: 40px;
+  }
 }
+
+@media (max-width: 384px)
+  .sticky_ul {
+    overflow: hidden;
+    padding: 3em;
+    padding-left: 0px;
+    margin-left: 20px;
 }
 
 ul li h2{
