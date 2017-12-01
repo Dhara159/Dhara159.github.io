@@ -53,6 +53,13 @@ ul,li{
     margin-left: 20px;
     margin-bottom: 30px
   }
+  
+  .sticky_ul {
+    overflow: hidden;
+    padding: 3em;
+    padding-left: 0px;
+    margin-left: 40px;
+}
 }
 
 ul li h2{
