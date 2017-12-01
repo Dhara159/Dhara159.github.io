@@ -48,6 +48,13 @@ ul,li{
   /*margin-right: 50px;*/
   float:left;
 }
+@media(max-width:430px){
+  .sticky_out{
+    margin-left: 20px;
+    margin-bottom: 30px
+  }
+}
+
 ul li h2{
   font-size:140%;
   font-weight:bold;
