@@ -2465,9 +2465,9 @@ a.callbacks_nav.callbacks1_nav.prev {
 	}
 }
 @media(max-width:375px){
-	.banner-image-w3layouts img {
-		width: 145px;
-		right: 6%;
+	width: 500px;
+    	right: -18px;
+    	top: 15px;
 	}
 	.about-left-w3ls h5 {
 		font-size: 1.4em;
